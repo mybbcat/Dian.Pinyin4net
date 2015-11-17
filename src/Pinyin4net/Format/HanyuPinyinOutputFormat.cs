@@ -44,7 +44,7 @@ namespace Pinyin4net.Format
     {
         private HanyuPinyinVCharType _vcharType = HanyuPinyinVCharType.WITH_V;
         private HanyuPinyinCaseType _caseType = HanyuPinyinCaseType.LOWERCASE;
-        private HanyuPinyinToneType _toneType = HanyuPinyinToneType.WITH_TONE_NUMBER;
+        private HanyuPinyinToneType _toneType = HanyuPinyinToneType.WITHOUT_TONE;
         
         public HanyuPinyinVCharType VCharType
         {

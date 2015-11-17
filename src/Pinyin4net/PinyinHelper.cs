@@ -23,9 +23,11 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection;
 using System.Xml.Linq;
 using System.Linq;
+using System.Text;
 using Pinyin4net.Format;
 
 namespace Pinyin4net
@@ -86,6 +88,44 @@ namespace Pinyin4net
         }
 
         /// <summary>
+        /// 转换字符串
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>无间隔的字符串全拼</returns>
+        public static string ToFullLetter(string str)
+        {
+            var format = new HanyuPinyinOutputFormat();
+
+            StringBuilder sb = new StringBuilder();
+            foreach (char ch in str)
+            {
+                sb.Append(GetFirstPinyinStringArray(ch, format));
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// 转换字符串
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns>字符串的首字母</returns>
+        public static string ToFirstLetter(string str)
+        {
+            var format = new HanyuPinyinOutputFormat();
+
+            StringBuilder sb = new StringBuilder();
+            foreach (char ch in str)
+            {
+                var s = GetFirstPinyinStringArray(ch, format);
+                if (!string.IsNullOrEmpty(s))
+                {
+                    sb.Append(s.Substring(0,1));
+                }
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
         /// Get all Hanyu pinyin of a single Chinese character (both
         /// Simplified Chinese and Traditional Chinese).
         /// </summary>
@@ -124,6 +164,28 @@ namespace Pinyin4net
             if (dict.ContainsKey(code))
             {
                 return dict[code].Split(',');
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// 只从拼音库中读取第一个拼音
+        /// 也就是忽略多音字
+        /// </summary>
+        private static string GetFirstPinyinStringArray(char ch,HanyuPinyinOutputFormat format)
+        {
+            const string comma = ",";
+            string code = String.Format("{0:X}", (int)ch).ToUpper();
+            if (dict.ContainsKey(code))
+            {
+                var py = dict[code];
+                var index = py.IndexOf(comma);
+                if (index > 0)
+                {
+                    py = py.Substring(0,index);
+                }
+                return PinyinFormatter.FormatHanyuPinyin(py, format);
             }
 
             return null;

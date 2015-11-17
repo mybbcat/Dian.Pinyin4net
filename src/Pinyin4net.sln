@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinyin4net", "Pinyin4net\Pinyin4net.csproj", "{126A4885-0CD7-4D9F-B039-3CF235F3C9E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinyin4netTest", "Pinyin4netTest\Pinyin4netTest.csproj", "{15C612DD-DB7C-4905-9786-71B1E6A94007}"
