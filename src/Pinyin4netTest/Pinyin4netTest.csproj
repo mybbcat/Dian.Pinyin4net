@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pinyin4netTest</RootNamespace>
-    <AssemblyName>Pinyin4netTest</AssemblyName>
+    <AssemblyName>Dian.Pinyin4netTest</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="HanyuPinyinTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="PinyinStrTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pinyin4net\Pinyin4net.csproj">

@@ -1,7 +1,7 @@
-﻿pinyin4net
+﻿Dian.Pinyin4net
 =============================================
 
-Pinyin4net can help you convert 中文 to zhōng wén.
+Dian.Pinyin4net can help you convert 中文 to zhōng wén.
 
 Getting started
 ---------------------------------------------
@@ -11,7 +11,7 @@ Getting started
 		...  
 		string[] pinyinStr = PinyinHelper.ToHanyuPinyinStringArray(someChineseChar);  
 		...  
-
+		string pinyinStr = PinyinHelper.ToFirstLetter(someChineseString)
 
 Features
 ---------------------------------------------
@@ -33,16 +33,16 @@ Bug tracker
 ---------------------------------------------
 
 Have a bug? Please create an issue here on GitHub!  
-[https://github.com/YangKuang/pinyin4net/issues](https://github.com/YangKuang/pinyin4net/issues)
+[https://github.com/mybbcat/diandi.pinyin4net/issues](https://github.com/mybbcat/diandi.pinyin4net/issues)
 
 Authors
 ---------------------------------------------
 
-*Yang Kuang(yangkuang2001@126.com)*
+*mybbcat@gmail.com*
 
 License
 ---------------------------------------------
 
-Pinyin4net is released under the MIT licence:  
+Dian.Pinyin4net is released under the MIT licence:  
 * [www.opensource.org/licenses/MIT](www.opensource.org/licenses/MIT)
 

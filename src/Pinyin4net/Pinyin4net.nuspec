@@ -2,15 +2,15 @@
 <package >
   <metadata>
     <id>DianDi.Pinyin4net</id>
-    <version>1.0.0.2</version>
-    <title>DianDi.Pinyin4net</title>
-    <authors>DianDi</authors>
-    <owners>DianDi</owners>
+    <version>1.0.0.3</version>
+    <title>Dian.Pinyin4net</title>
+    <authors>HuangShengnan</authors>
+    <owners>HuangShengnan</owners>
     <licenseUrl>http://www.opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/mybbcat/pinyin4net</projectUrl>
     <iconUrl>https://gravatar.com/images/grav-logo-2x.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>DianDi.Pinyin4net is a .net library supporting convertion between Chinese characters and Pinyin systems.</description>
+    <description>Dian.Pinyin4net is a .net library supporting convertion between Chinese characters and Pinyin systems.</description>
     <releaseNotes>支持转换字符串为全拼或拼音首字母.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>c# chinese pinyin</tags>
