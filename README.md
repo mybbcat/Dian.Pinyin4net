@@ -28,7 +28,7 @@ Features
 Nuget
 ---------------------------------------------
 
-Plesae see [https://www.nuget.org/packages/Dian.BindParameterForWebApi](https://www.nuget.org/packages/Dian.BindParameterForWebApi/)
+Plesae see [https://www.nuget.org/packages/Dian.Pinyin4net](https://www.nuget.org/packages/Dian.Pinyin4net)
 
 Acknowledgments 
 ---------------------------------------------
