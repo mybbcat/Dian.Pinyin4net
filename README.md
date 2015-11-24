@@ -10,9 +10,11 @@ Getting started
 
 		...  
 		string[] pinyinStr = PinyinHelper.ToHanyuPinyinStringArray(someChineseChar);  
+
 		...  
 		string pinyinStr = PinyinHelper.ToFirstLetter(someChineseString)
-
+		
+		...
 Features
 ---------------------------------------------
 
@@ -22,6 +24,11 @@ Features
 		All uppercase or lowercase  
 		Can out put Unicode ü or v or u:  
 		With tone numbers (lü3) or tone marks (lǚ) or without tone (lü)  
+
+Nuget
+---------------------------------------------
+
+Plesae see [https://www.nuget.org/packages/Dian.BindParameterForWebApi](https://www.nuget.org/packages/Dian.BindParameterForWebApi/)
 
 Acknowledgments 
 ---------------------------------------------
