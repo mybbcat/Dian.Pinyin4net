@@ -12,7 +12,9 @@ Getting started
 		string[] pinyinStr = PinyinHelper.ToHanyuPinyinStringArray(someChineseChar);  
 
 		...  
-		string pinyinStr = PinyinHelper.ToFirstLetter(someChineseString)
+		string pinyinStr = PinyinHelper.ToFirstLetter(someChineseString);
+		string pinyinStr = PinyinHelper.ToFullLetter(someChineseString);
+		
 		
 		...
 Features
